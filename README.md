@@ -2,6 +2,8 @@
 
 Dieses Repository enthält einen optimierten Low-Level-Grafiktreiber für das transflektive FSTN-Display Midas MCCOG240160C6W-FPTLW (240x160 Pixel) zur Nutzung mit einem ESP32-Mikrocontroller. Der Treiber steuert den integrierten ST7529-Displaycontroller an und wurde im Rahmen einer Studienarbeit im Studiengang Elektrotechnik an der Dualen Hochschule Baden-Württemberg (DHBW) Mannheim entwickelt.
 
+Credits: Dieser Treiber orientiert sich an [augustofg/libst7529](https://github.com/augustofg/libst7529). Ohne die gegebenen Werte im Initialisierungsprozess wäre diese Arbeit vermutlich nicht, oder wesentlich schwerer umzusetzen gewesen.
+
 ## Features
 
 * **Adafruit GFX Kompatibilität:** Vollständige Integration in die Adafruit GFX-Bibliothek zur universellen Darstellung von Texten, Geometrien und Bitmaps.
