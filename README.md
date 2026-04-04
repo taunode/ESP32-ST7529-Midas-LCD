@@ -25,7 +25,7 @@ Im Rahmen der Arbeit wurden drei verschiedene Ansteuerungsarten evaluiert. Das S
 
 ## Hardware & Schaltpläne
 
-Die Schaltpläne für die verschiedenen Setups befinden sich im Ordner `schematics/` (oder entsprechend verlinken):
+Die Schaltpläne für die verschiedenen Setups befinden sich im Ordner `schematics/`:
 
 1.  **Paralleler Betrieb:** Direkte Verbindung aller 8 Datenbits + Steuerleitungen.
 2.  **MCP23017 Setup:** Ansteuerung über den I2C-Bus (SDA/SCL).
