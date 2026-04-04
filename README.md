@@ -39,30 +39,3 @@ Die Schaltpläne für die verschiedenen Setups befinden sich im Ordner `schemati
 * **STORE (RCLK):** GPIO 33
 * **LCD_WR:** GPIO 14
 * **LCD_RS:** GPIO 26
-
-## Quickstart
-
-Der Treiber überschreibt die `drawPixel()` Funktion der Adafruit GFX Library. Komplexere Formen wie Kreise oder Texte nutzen intern diese Funktion.
-
-```cpp
-#include "MyCustomDisplay.h"
-
-// Initialisierung (Breite, Höhe)
-MyCustomDisplay matrix(240, 160);
-
-void setup() {
-  initDisplay(); // Initialisierungssequenz für ST7529
-}
-
-void loop() {
-  // 1. Framebuffer leeren (z.B. Weiß/Hintergrund)
-  memset(framebuffer, 31, sizeof(framebuffer));
-
-  // 2. Zeichnen
-  matrix.setCursor(10, 10);
-  matrix.print("System Ready");
-  matrix.drawCircle(120, 80, 30, 0); // Schwarzer Kreis
-
-  // 3. Update (Daten an Display-RAM senden)
-  updateDisplay();
-}```
